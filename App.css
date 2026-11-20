@@ -1,0 +1,157 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background: #ffe5b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.todo-box {
+  background: #292323;
+  border: 3px solid #174cff;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 720px;
+  padding: 65px 32px 30px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+.input-area input {
+  width: 65%;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+.input-area button {
+  background: #2860e8;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task {
+  border: 2px solid #777;
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.task-name input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  gap: 25px;
+  flex-shrink: 0;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #e32650;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  border-top: 4px solid #174cff;
+  margin-top: 25px;
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+@media (max-width: 550px) {
+  .todo-box {
+    padding: 35px 15px 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .task {
+    flex-wrap: wrap;
+  }
+
+  .task-name {
+    font-size: 16px;
+  }
+
+  .actions {
+    gap: 15px;
+  }
+
+  .actions button {
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+}
